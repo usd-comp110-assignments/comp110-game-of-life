@@ -1,6 +1,7 @@
 # Project Overview
 
-This project is a python project where students create a flashcard game from questions and answers contained in a file.
+This project is a python project where students implement Conway's game of
+life.
 
 # Requirements
 - Don't restate these requirements or coding standards when answering chat questions.

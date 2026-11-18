@@ -5,9 +5,6 @@ Authors:
 2. <PARTNER B INSERT YOUR NAME AND USD EMAIL HERE>
 """
 
-# You will add implementations of the functions one_step and neighbor_count,
-# along with test code for both functions.
-
 def test_neighbor_count():
     """Function that tests the neighbor_count function."""
     
@@ -24,7 +21,6 @@ def test_neighbor_count():
     assert actual == expected, f"FAILED test 2: bottom edge cell with one neighbor N.\nExpected {expected}.\nGot {actual}"
 
     # To Do: Add your additional test cases below this line.
-
     
 
 def neighbor_count(grid, row, col):
@@ -41,12 +37,15 @@ def neighbor_count(grid, row, col):
     Returns:
         int: Number of live neighbors of the cell in the given row/col. 
     """
-    pass
+
+    return 0 # To Do: Replace this line with a correct implemenation of this function.
+
 
 def test_one_step():
     """Function that tests the one_step function."""
     
-    pass # To Do: Delete this line and replace it with assertion-based test cases for one_step
+    assert False, "Tests not implemented" # To Do: Delete this line and replace it with assertion-based test cases for one_step
+
 
 def one_step(grid):
     """Simulates one time step of the grid in the Game of Life simulation.

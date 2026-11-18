@@ -1,14 +1,15 @@
-"""
-A Python implementation of Conway's game of life, using Tkinter.
+"""A Python implementation of Conway's game of life, using Tkinter.
+
+Authors:
+1. <PARTNER A INSERT YOUR NAME AND USD EMAIL HERE>
+2. <PARTNER B INSERT YOUR NAME AND USD EMAIL HERE>
 """
 
 # You will add implementations of the functions one_step and neighbor_count,
 # along with test code for both functions.
 
 def test_neighbor_count():
-    """
-    Function that tests the neighbor_count function.
-    """
+    """Function that tests the neighbor_count function."""
     
     expected = 5
     actual = neighbor_count([[False, True, False],   
@@ -22,50 +23,50 @@ def test_neighbor_count():
                             [False, False, False]], 2, 1)
     assert actual == expected, f"FAILED test 2: bottom edge cell with one neighbor N.\nExpected {expected}.\nGot {actual}"
 
+    # To Do: Add your additional test cases below this line.
+
     
 
 def neighbor_count(grid, row, col):
-    """
-    Returns count of number of alive neighbors to the cell in row, col 
+    """Returns count of number of alive neighbors to the cell in row, col 
 
-    Parameters:
-    grid (type: list): 2D list representing the current state of the grid, where
-                        each cell is either True (alive) or False (dead).
-                        The first index is the row, and the second index is the column,
-                        so grid[r][c] represents the cell at row r and column c.  
-    row (type: int): Row index of the cell whose neighbors are to be counted.
-    col (type: int): Column index of the cell whose neighbors are to be counted.
+    Args:
+        grid: 2D list representing the current state of the grid, where
+              each cell is either True (alive) or False (dead).
+              The first index is the row, and the second index is the column,
+              so grid[r][c] represents the cell at row r and column c.
+        row: Row index of the cell whose neighbors are to be counted.
+        col: Column index of the cell whose neighbors are to be counted.
      
     Returns:
-    (type: int) Number of alive neighbors of the cell in row, col. 
+        int: Number of live neighbors of the cell in the given row/col. 
     """
     pass
 
 def test_one_step():
-    """
-    Function that tests the one_step function.
-    """
-    pass
+    """Function that tests the one_step function."""
+    
+    pass # To Do: Delete this line and replace it with assertion-based test cases for one_step
 
 def one_step(grid):
-    """
-    Simulates one time step of the grid in the Game of Life simulation.
+    """Simulates one time step of the grid in the Game of Life simulation.
 
-    Parameters:
-    grid (type: list): 2D list representing the current state of the grid, where
-                        each cell is either True (alive) or False (dead).
-                        The first index is the row, and the second index is the column,
-                        so grid[r][c] represents the cell at row r and column c.   
+    Args:
+        grid: 2D list representing the current state of the grid, where
+              each cell is either True (alive) or False (dead).
+              The first index is the row, and the second index is the column,
+              so grid[r][c] represents the cell at row r and column c. 
 
     Returns:
-    (type: list) 2D list representing the state of the grid after one time additional
-                time step.
+        list: 2D list representing the state of the grid after one time additional time step.
     """
-    return grid # Replace this with function implementation
+    
+    return grid[:] # To Do: Replace this with function implementation
+
 
 
 #################################################################
-# Do not modify below here.
+# DO NOT modify anything below this line!!!
 #################################################################
 
 import tkinter as tk

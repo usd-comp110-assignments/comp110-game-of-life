@@ -226,7 +226,7 @@ class LifeView:
             for c in range(self.num_cols):
                 frame = tk.Frame(self.grid_frame, width = self.CELL_SIZE, 
                          height = self.CELL_SIZE, borderwidth = 1, 
-                         relief = "solid")
+                         relief = "solid", bg = "white")
                 frame.grid(row = r, column = c)
                 row.append(frame)
             cells.append(row)

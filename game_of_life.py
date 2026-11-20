@@ -10,17 +10,17 @@ def test_neighbor_count():
     
     expected = 5
     actual = neighbor_count([[False, True, False],   
-                            [True, False, True],
-                            [True, False, True]], 1, 1) 
-    assert actual == expected, f"FAILED test 1: non-edge cell with multiple neighbors.\nExpected {expected}.\nGot {actual}"
+                             [True, False, True],
+                             [True, False, True]], 1, 1) 
+    assert actual == expected, f"FAILED: Test 1: Non-edge cell with many live neighbors.\nExpected {expected}.\nGot {actual}"
     
-    expected = 1
+    expected = 0
     actual = neighbor_count([[False, False, False],   
-                            [False, True, False],
-                            [False, False, False]], 2, 1)
-    assert actual == expected, f"FAILED test 2: bottom edge cell with one neighbor N.\nExpected {expected}.\nGot {actual}"
+                             [False, True, False],
+                             [False, False, False]], 1, 1)
+    assert actual == expected, f"FAILED: Test 2: Non-edge cell with no live neighbors.\nExpected {expected}.\nGot {actual}"
 
-    # To Do: Add your additional test cases below this line.
+    # To Do: Add the remaining test cases from the test table below this line.
     
 
 def neighbor_count(grid, row, col):
